@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    max-width: 90rem;
+    height: 100vh;
+    text-align: center;
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+}
+main{
+    padding: 5%;
+}
+.header > p:first-child{
+    color:hsl(234, 12%, 34%);
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.header > p:nth-child(2){
+    color:hsl(234, 12%, 34%);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.header > p:nth-child(3){
+    color:hsl(234, 12%, 34%);
+    font-size: 1em;
+    width: 100%;
+    margin-top: 1em;
+}
+.articles >p{
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+}
+.articles{
+    text-align: right;
+    padding: 2em;
+    margin: 0 auto;
+    margin-top: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 8px 1em hsl(229, 6%, 66%);
+    color: hsl(234, 12%, 34%);
+    max-width: 21rem;
+    cursor: pointer;
+
+}
+.articles h3{
+    text-align: left;
+}
+.articles img{
+    margin-top: 2em;
+}
+.container > div:nth-child(1){
+    border-top: .5em solid hsl(180, 62%, 55%);
+}
+.container > div:nth-child(2){
+    border-top: .5em solid hsl(0, 78%, 62%);
+}
+.container > div:nth-child(3){
+    border-top: .5em solid hsl(34, 97%, 64%);
+}
+.container > div:nth-child(4){
+    border-top: .5em solid hsl(212, 86%, 64%);
+}
+article{
+    margin: 4em  auto;
+}
+@media screen and (min-width:56.8rem){
+    main{
+        padding: 3%;
+    }
+    
+    .container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .articles{
+        margin: 0 1em;
+        margin-top: 2em;
+    }
+    .container > div:nth-child(odd){
+        transform: translateY(57%);
+    }
+    .header > p:nth-child(3){
+        max-width: 35em;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+    .header > p:first-child,.header > p:nth-child(2){
+        font-size: 2em;
+    }
+    article{
+        margin: 1em  auto;
+    }
+}
+
